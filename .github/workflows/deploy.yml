@@ -1,9 +1,8 @@
 name: Deployment (Container)
 on:
-  push:
-    branches:
-      - master
-      - dev
+  branches:
+    - master
+    - dev
 env:
   CACHE_KEY: node-deps
   MONGODB_DB_NAME: gha-demo
@@ -13,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
-      MONGODB_CLUSTER_ADDRESS: cluster0.ntrwp.mongodb.net
+      MONGODB_CLUSTER_ADDRESS: cluster0.4e34vau.mongodb.net
       MONGODB_USERNAME: ohidalgov
       MONGODB_PASSWORD: mq7txeKTmuodPYeq
       PORT: 8080
