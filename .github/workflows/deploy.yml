@@ -1,8 +1,9 @@
 name: Deployment (Container)
 on:
-  branches:
-    - master
-    - dev
+  push:
+    branches:
+      - master
+      - dev
 env:
   CACHE_KEY: node-deps
   MONGODB_DB_NAME: gha-demo
